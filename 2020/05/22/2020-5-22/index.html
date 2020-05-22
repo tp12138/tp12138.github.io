@@ -5,12 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>蕾姆天下第一! - 孤傲-orz摸鱼第一名</title>
+    <title>vs2017打包C#的桌面应用程序 - 孤傲-orz摸鱼第一名</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="GameLover,"> 
-    
+    <meta name="description" content="在要打包的项目的解决方案那里,右键-&amp;gt;添加-&amp;gt;新建项目
+
+然后在添加项目的界面会出现一个选项:其他项目类型-&amp;gt;Visual Studio Installer
+
+如果没有说明你,没有,"> 
     <meta name="author" content="TangPeng"> 
     <link rel="alternative" href="atom.xml" title="孤傲-orz摸鱼第一名" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -38,7 +42,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">蕾姆天下第一!</h3>
+    <h3 class="subtitle">vs2017打包C#的桌面应用程序</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -53,16 +57,44 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">蕾姆天下第一!</h1>
+        <h1 class="title">vs2017打包C#的桌面应用程序</h1>
         <div class="stuff">
-            <span>四月 05, 2020</span>
+            <span>五月 22, 2020</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/C/" rel="tag">C#</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/vs/" rel="tag">vs</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            
+            <p>在要打包的项目的解决方案那里,右键-&gt;添加-&gt;新建项目</p>
+<p><img src="/.com//Snipaste_2020-05-22_10-51-53.png" alt="Snipaste_2020-05-22_10-51-53"></p>
+<p>然后在添加项目的界面会出现一个选项:其他项目类型-&gt;Visual Studio Installer</p>
+<p><img src="/.com//Snipaste_2020-05-22_11-00-36.png" alt="TIM截图20200522105641"></p>
+<p>如果没有说明你,没有按照这个打包插件,请去工具-&gt;扩展和更新-&gt;联机中搜索并安装(<del>搜索到的第一个就是应该</del>)</p>
+<p><img src="/.com//Snipaste_2020-05-22_10-57-51.png" alt></p>
+<p>下载以后,关闭vs2017,等待安装界面弹出,并安装即可.</p>
+<p>回到前面一步,在新建项目选择Visual Studio Installer后,选择右边的Setup-Project-&gt;输入项目名字-&gt;确定</p>
+<p>在出现的界面中,右键Application Folder-&gt;Add-&gt;项目输出</p>
+<p><img src="/.com//Snipaste_2020-05-22_11-00-36.png" alt></p>
+<p>然后选择主输出,注意右边的项目,选择你要导出的项目哟</p>
+<p><img src="/.com//TIM%E6%88%AA%E5%9B%BE20200522110227.png" alt></p>
+<p>注意右边的窗口,选择右键【主输出from  你的项目名称】  选择  Create Shortcut to…  生成快捷方式</p>
+<p><img src="/.com//Snipaste_2020-05-22_11-05-50.png" alt></p>
+<p>之后,右边会生成一个Type为Shortcut的文件,这个就是导出的项目安装以后会生成的快捷方式,你可以修改她的名称</p>
+<p><img src="/.com//2020-5-22%5CTIM%E6%88%AA%E5%9B%BE20200522110735.png" alt></p>
+<p>然后拖入右边的User’s Desktop文件夹中,意思就是安装以后会生成这个快捷方式到桌面</p>
+<p>到这里,基本完事了,然后,在解决方案资源管理器选中Setup1这个项目<del>(也许你名字可能不同)</del></p>
+<p>右键,生成就ok了</p>
+<p>最后,打开刚才那个Setup1的文件夹:右键项目,在资源管理器中打开文件夹</p>
+<p><img src="/.com//Snipaste_2020-05-22_11-12-14.png" alt></p>
+<p>debug文件夹下面就是了</p>
+<p><img src="/.com//TIM%E6%88%AA%E5%9B%BE20200522111254.png" alt></p>
+<p>这两个玩意.exe是需要msi文件才能安装的要注意qwq</p>
+<p>打开exe文件进行安装,第一次可能比较慢</p>
+<p><img src="/.com//TIM%E6%88%AA%E5%9B%BE20200522111701.png" alt></p>
+<p><img src="/.com//TIM%E6%88%AA%E5%9B%BE20200522111727.png" alt></p>
+<p>建议安装的时候为它新建一个文件夹,剩下的基本都简单了orz</p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
