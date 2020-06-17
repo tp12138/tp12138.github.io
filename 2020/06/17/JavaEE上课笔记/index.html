@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="zh" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JavaEE上课笔记 - 孤傲-orz摸鱼第一名</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="GameLover,"> 
+    <meta name="description" content="软件开发实训第二天,qwq记录了一些上课的笔记
+
+
+编码规范:
+命名不规范: 不要使关键字做任何名称   望文生义
+格式规范:  注意 换行,缩进,对齐
+注释要规范: 20%-30%是注释 文档注释,"> 
+    <meta name="author" content="TangPeng"> 
+    <link rel="alternative" href="atom.xml" title="孤傲-orz摸鱼第一名" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">孤傲-orz摸鱼第一名</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">JavaEE上课笔记</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">JavaEE上课笔记</h1>
+        <div class="stuff">
+            <span>六月 17, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>软件开发实训第二天,qwq记录了一些上课的笔记</p>
+<a id="more"></a>
+
+<h5 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范:"></a>编码规范:</h5><ul>
+<li>命名不规范: 不要使关键字做任何名称   望文生义</li>
+<li>格式规范:  注意 换行,缩进,对齐</li>
+<li>注释要规范: 20%-30%是注释 文档注释:主要用来对外提供API帮助信息,.一般在类和方法的前面</li>
+<li>变量命的缩写要规范</li>
+<li>不能省略花括号</li>
+<li>JDK 源代码加载: 按住Ctrl,鼠标点击对象</li>
+<li>能自己测试解决的问题一律不要去问!!!!<ul>
+<li>编码时注意代码的创建:代码在用的时候再去编写它</li>
+</ul>
+</li>
+<li>注意问问题的方式:说明问题的原因,期望的结果,实际的结果,已经做过的调试</li>
+</ul>
+<h5 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h5><ul>
+<li>Ctrl+SHift+O 去除类中多余的包,添加缺少的包</li>
+</ul>
+<h6 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程:"></a>软件工程:</h6><ul>
+<li><p>软件工程:需求分析,概要设计,详细设计,编码,测试,维护</p>
+</li>
+<li><p>六字:高内聚,低耦合</p>
+</li>
+</ul>
+<h5 id="项目需求"><a href="#项目需求" class="headerlink" title="项目需求"></a>项目需求</h5><p>  用户管理系统</p>
+<p>   运行系统:提示`欢迎信息<br>​                 提示:选择行为:1,注册,2,登录,3,退出</p>
+<ul>
+<li><p>① 注册<br>  用户注册项:用户名,密码,年龄,邮箱<br>​  注册成功,提示:1,注册,2,登录,3,/退出</p>
+<p>  ==拓展功能:查重== </p>
+</li>
+<li><p>② 登录<br>  用户登陆项:用户名,密码<br>​    登录成功提示:1,用户列表 2. 退出</p>
+</li>
+<li><p>③ 用户列表<br>  列出所有用户信息<br>​    提示:1,增加用户    2,修改用户    3,删除用户    4.查询用户</p>
+</li>
+<li><p>④ 用户管理:增     删     改    查    排序</p>
+<p>​    查看用户,修改,删除用户</p>
+</li>
+<li><p>⑤ 查看用户详情<br>  提示:请输入查看的用户序号<br>​    判断用户是否存在</p>
+<p>​    修改成功后,回到登录成功提示</p>
+</li>
+<li><p>⑥ 修改用户<br>  提示:请输入修改用户的序号<br>​    判断用户是否存在</p>
+<p>​    修改成功后,回到登录成功提示</p>
+</li>
+<li><p>⑦ 删除用户<br>  提示:请输入修改用户的序号<br>​  判断用户是否存在</p>
+<p>  确实是否删除</p>
+<p>  删除成功后,回到登录成功提示</p>
+</li>
+</ul>
+<h5 id="需要解决的问题分析"><a href="#需要解决的问题分析" class="headerlink" title="需要解决的问题分析"></a>需要解决的问题分析</h5><ul>
+<li><p>循环输入结构</p>
+</li>
+<li><p>循环输入校验的封装</p>
+</li>
+<li><p>数据存储: List<User><br>Bean/JavaBean/VO(Value object)/DTO(Data Transfer Object):</User></p>
+<p>   就是一个普通的面向对象封装的类,其唯一作用就是用来存储数据与传递数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">一个标准的JavaBean:</span><br><span class="line">  </span><br><span class="line">- 私有的属性和对应的get&#x2F;set方法</span><br><span class="line">  </span><br><span class="line">- 定义公开的无参构造方法</span><br><span class="line">  </span><br><span class="line">- 定义公开的全参的构造方法</span><br><span class="line">  </span><br><span class="line">- 不需要与属性无关的方法</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>项目结构</p>
+<p>用户    控制台    Java后台代码</p>
+<p> Java融入我们的生活中.来源与生活  </p>
+<p> 项目结构角色:</p>
+<p>  用户:使用者</p>
+<p>  视图(View):直接和用用户进行交互的一层,即控制台</p>
+<p>  服务层(Server):Java代码,为View提供最终数据支持</p>
+</li>
+</ul>
+<h5 id="技术解决方案"><a href="#技术解决方案" class="headerlink" title="技术解决方案"></a>技术解决方案</h5><ul>
+<li><p>循环输入结构</p>
+</li>
+<li><p>循环输入校验的封装</p>
+</li>
+<li><p>项目结构搭建<br>A. 创建一个类View,用来和用户进行交互<br>B. 创建一个Service类</p>
+</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='https://link.hhtjim.com/163/1428401694.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='https://link.hhtjim.com/163/1397725153.mp3'></li>
+                        
+                    
+                        
+                            <li title='2' data-url='https://link.hhtjim.com/163/436675656.mp3'></li>
+                        
+                    
+                        
+                            <li title='3' data-url='https://link.hhtjim.com/163/493041272.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
